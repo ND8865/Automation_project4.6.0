@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Smoke" class="navigator-link ">
-                    <span>C:\Users\Lenovo\Downloads\Project_Selenium_4.6.0-main (2)\Project_Selenium_4.6.0-main\testng.xml</span>
+                    <span>C:\Users\Lenovo\OneDrive\Documents\GitHub\Automation_project4.6.0\RQE.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Smoke">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke" title="testclass.launch_google_test" class="method navigator-link" hash-for-method="Failedmethod">Failedmethod</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Smoke" title="testClasses.Login_test" class="method navigator-link" hash-for-method="failtest">failtest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Smoke -->
@@ -118,7 +118,17 @@
                     <div class="method-list-content passed suite-Smoke">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke" title="testclass.launch_google_test" class="method navigator-link" hash-for-method="sendkey">sendkey</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Smoke" title="testClasses.Login_test" class="method navigator-link" hash-for-method="VerifyPassword">VerifyPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke" title="testClasses.Login_test" class="method navigator-link" hash-for-method="Verifyusername">Verifyusername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke" title="testClasses.Login_test" class="method navigator-link" hash-for-method="clickonSignin">clickonSignin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Smoke -->
@@ -136,25 +146,42 @@
           <div class="suite-Smoke-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testclass.launch_google_test</span>
+              <span class="class-name">testClasses.Login_test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Failedmethod">
-                  </a> <!-- Failedmethod -->
-                  <span class="method-name">Failedmethod</span>
-                  <div class="stack-trace">java.lang.Error: Unresolved compilation problems: 
-	Syntax error, insert &quot;VariableDeclarators&quot; to complete LocalVariableDeclaration
-	Syntax error, insert &quot;;&quot; to complete BlockStatements
-
-	at pageclass.launch_google.getfailed(launch_google.java:27)
-	at testclass.launch_google_test.Failedmethod(launch_google_test.java:31)
+                  <a name="failtest">
+                  </a> <!-- failtest -->
+                  <span class="method-name">failtest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;user_email&apos;]&quot;}
+  (Session info: chrome=114.0.5735.248)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e42824c2bcc2a7b2ff5909c9d55283a9, findElement {using=xpath, value=//input[@id=&apos;user_email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64614}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64614/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e42824c2bcc2a7b2ff5909c9d55283a9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.isEnabled(Unknown Source)
+	at pageClasses.Login_page.failtestcase(Login_page.java:50)
+	at testClasses.Login_test.failtest(Login_test.java:41)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
-                  <em>
-( Verify that method is failed )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,14 +189,34 @@
           <div class="suite-Smoke-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testclass.launch_google_test</span>
+              <span class="class-name">testClasses.Login_test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="sendkey">
-                  </a> <!-- sendkey -->
-                  <span class="method-name">sendkey</span>
+                  <a name="VerifyPassword">
+                  </a> <!-- VerifyPassword -->
+                  <span class="method-name">VerifyPassword</span>
+                  <em>
+( Verify that user is able to Enter the Password. )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verifyusername">
+                  </a> <!-- Verifyusername -->
+                  <span class="method-name">Verifyusername</span>
+                  <em>
+( Verify that user is able to Enter the username. )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickonSignin">
+                  </a> <!-- clickonSignin -->
+                  <span class="method-name">clickonSignin</span>
+                  <em>
+( Verify that user is able to click on the sign button )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -177,7 +224,7 @@
         </div> <!-- panel Smoke -->
         <div panel-name="test-xml-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Lenovo\Downloads\Project_Selenium_4.6.0-main (2)\Project_Selenium_4.6.0-main\testng.xml</span>
+            <span class="header-content">C:\Users\Lenovo\OneDrive\Documents\GitHub\Automation_project4.6.0\RQE.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -185,11 +232,11 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Smoke&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;Extent_setup.ListenersImplementation&quot;/&gt;
+    &lt;listener class-name=&quot;extentReport.ListenersImplementation&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testclass.launch_google_test&quot;/&gt;
+      &lt;class name=&quot;testClasses.Login_test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Smoke --&gt;
@@ -229,20 +276,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'sendkey')
-data.setCell(0, 2, 'testclass.launch_google_test')
-data.setCell(0, 3, 8122);
+data.setCell(0, 1, 'clickonSignin')
+data.setCell(0, 2, 'testClasses.Login_test')
+data.setCell(0, 3, 1301);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Failedmethod')
-data.setCell(1, 2, 'testclass.launch_google_test')
-data.setCell(1, 3, 1);
+data.setCell(1, 1, 'Verifyusername')
+data.setCell(1, 2, 'testClasses.Login_test')
+data.setCell(1, 3, 1175);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'VerifyPassword')
+data.setCell(2, 2, 'testClasses.Login_test')
+data.setCell(2, 3, 97);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'failtest')
+data.setCell(3, 2, 'testClasses.Login_test')
+data.setCell(3, 3, 24);
 window.suiteTableData['Smoke']= { tableData: data, tableDiv: 'times-div-Smoke'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Smoke">
               </div> <!-- times-div-Smoke -->
             </div> <!-- times-div -->
@@ -268,24 +323,32 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testclass.launch_google_test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testClasses.Login_test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">getlaunch</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">sendkey</span>
-                <span class="method-start">5447 ms</span>
+                <span class="method-name">Verifyusername</span>
+                <span class="method-start">10508 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyPassword</span>
+                <span class="method-start">11693 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickonSignin</span>
+                <span class="method-start">11791 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">Failedmethod</span>
-                <span class="method-start">13580 ms</span>
+                <span class="method-name">failtest</span>
+                <span class="method-start">13096 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">13720 ms</span>
+                <span class="method-start">13260 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
