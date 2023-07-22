@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-22T16:11:42 IST" name="Smoke" finished-at="2023-07-22T16:11:55 IST" duration-ms="13383">
+  <suite started-at="2023-07-22T19:39:21 IST" name="Smoke" finished-at="2023-07-22T19:39:35 IST" duration-ms="14031">
     <groups>
     </groups>
-    <test started-at="2023-07-22T16:11:42 IST" name="Test" finished-at="2023-07-22T16:11:55 IST" duration-ms="13383">
+    <test started-at="2023-07-22T19:39:21 IST" name="Test" finished-at="2023-07-22T19:39:35 IST" duration-ms="14031">
       <class name="testClasses.Login_test">
-        <test-method is-config="true" signature="getlaunch()[pri:0, instance:testClasses.Login_test@a514af7]" started-at="2023-07-22T16:11:43 IST" name="getlaunch" finished-at="2023-07-22T16:11:52 IST" duration-ms="8802" status="PASS">
+        <test-method is-config="true" signature="getlaunch()[pri:0, instance:testClasses.Login_test@a514af7]" started-at="2023-07-22T19:39:21 IST" name="getlaunch" finished-at="2023-07-22T19:39:31 IST" duration-ms="10493" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getlaunch -->
-        <test-method signature="Verifyusername()[pri:1, instance:testClasses.Login_test@a514af7]" started-at="2023-07-22T16:11:52 IST" name="Verifyusername" description=" Verify that user is able to Enter the username. " finished-at="2023-07-22T16:11:53 IST" duration-ms="1309" status="PASS">
+        <test-method signature="Verifyusername()[pri:1, instance:testClasses.Login_test@a514af7]" started-at="2023-07-22T19:39:32 IST" name="Verifyusername" description=" Verify that user is able to Enter the username. " finished-at="2023-07-22T19:39:33 IST" duration-ms="1175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verifyusername -->
-        <test-method signature="VerifyPassword()[pri:2, instance:testClasses.Login_test@a514af7]" started-at="2023-07-22T16:11:53 IST" name="VerifyPassword" description=" Verify that user is able to Enter the Password. " finished-at="2023-07-22T16:11:53 IST" duration-ms="154" status="PASS">
+        <test-method signature="VerifyPassword()[pri:2, instance:testClasses.Login_test@a514af7]" started-at="2023-07-22T19:39:33 IST" name="VerifyPassword" description=" Verify that user is able to Enter the Password. " finished-at="2023-07-22T19:39:33 IST" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyPassword -->
-        <test-method signature="clickonSignin()[pri:3, instance:testClasses.Login_test@a514af7]" started-at="2023-07-22T16:11:53 IST" name="clickonSignin" description=" Verify that user is able to click on the sign button " finished-at="2023-07-22T16:11:55 IST" duration-ms="1603" status="PASS">
+        <test-method signature="clickonSignin()[pri:3, instance:testClasses.Login_test@a514af7]" started-at="2023-07-22T19:39:33 IST" name="clickonSignin" description=" Verify that user is able to click on the sign button " finished-at="2023-07-22T19:39:34 IST" duration-ms="1301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickonSignin -->
-        <test-method signature="failtest()[pri:4, instance:testClasses.Login_test@a514af7]" started-at="2023-07-22T16:11:55 IST" name="failtest" description="  " finished-at="2023-07-22T16:11:55 IST" duration-ms="68" status="FAIL">
+        <test-method signature="failtest()[pri:4, instance:testClasses.Login_test@a514af7]" started-at="2023-07-22T19:39:34 IST" name="failtest" description="  " finished-at="2023-07-22T19:39:34 IST" duration-ms="24" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='user_email']"}
@@ -32,9 +32,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.6.0', revision: '79f1c02ae20'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e838463055dfd53e8a5466add4886f60, findElement {using=xpath, value=//input[@id='user_email']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63629}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63629/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e838463055dfd53e8a5466add4886f60]]>
+Command: [e42824c2bcc2a7b2ff5909c9d55283a9, findElement {using=xpath, value=//input[@id='user_email']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64614}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64614/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e42824c2bcc2a7b2ff5909c9d55283a9]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='user_email']"}
@@ -43,9 +43,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.6.0', revision: '79f1c02ae20'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e838463055dfd53e8a5466add4886f60, findElement {using=xpath, value=//input[@id='user_email']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63629}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63629/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e838463055dfd53e8a5466add4886f60
+Command: [e42824c2bcc2a7b2ff5909c9d55283a9, findElement {using=xpath, value=//input[@id='user_email']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64614}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64614/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e42824c2bcc2a7b2ff5909c9d55283a9
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -97,7 +97,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failtest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testClasses.Login_test@a514af7]" started-at="2023-07-22T16:11:55 IST" name="teardown" finished-at="2023-07-22T16:11:55 IST" duration-ms="478" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testClasses.Login_test@a514af7]" started-at="2023-07-22T19:39:34 IST" name="teardown" finished-at="2023-07-22T19:39:35 IST" duration-ms="299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
